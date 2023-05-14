@@ -1,0 +1,5 @@
+<p>Admin Dashboard</p>
+<div *ngIf="isLoggedIn() else signIn">
+  <p>You are authenticated so you can see this content</p>
+</div>
+<ng-template #signIn><router-outlet></router-outlet></ng-template>
